@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "SwEJxowjSeA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Quim\\source\\repos\\CosmosKernel1\\CosmosKernel1\\CosmosKernel1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Quim\\.nuget\\packages\\cosmos.build\\0.1.0-localbuild20241009041903\\cosmos.build.0.1.0-localbuild20241009041903.nupkg.sha512",
+    "C:\\Users\\Quim\\.nuget\\packages\\cosmos.common\\0.1.0-localbuild20241009041923\\cosmos.common.0.1.0-localbuild20241009041923.nupkg.sha512",
+    "C:\\Users\\Quim\\.nuget\\packages\\cosmos.core\\0.1.0-localbuild20241009041923\\cosmos.core.0.1.0-localbuild20241009041923.nupkg.sha512",
+    "C:\\Users\\Quim\\.nuget\\packages\\cosmos.debug.kernel\\0.1.0-localbuild20241009041923\\cosmos.debug.kernel.0.1.0-localbuild20241009041923.nupkg.sha512",
+    "C:\\Users\\Quim\\.nuget\\packages\\cosmos.hal2\\0.1.0-localbuild20241009041923\\cosmos.hal2.0.1.0-localbuild20241009041923.nupkg.sha512",
+    "C:\\Users\\Quim\\.nuget\\packages\\cosmos.plugs\\0.1.0-localbuild20241009041923\\cosmos.plugs.0.1.0-localbuild20241009041923.nupkg.sha512",
+    "C:\\Users\\Quim\\.nuget\\packages\\cosmos.system2\\0.1.0-localbuild20241009041923\\cosmos.system2.0.1.0-localbuild20241009041923.nupkg.sha512",
+    "C:\\Users\\Quim\\.nuget\\packages\\il2cpu.api\\0.1.0-localbuild20241009041923\\il2cpu.api.0.1.0-localbuild20241009041923.nupkg.sha512"
+  ],
+  "logs": []
+}
