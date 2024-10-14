@@ -589,11 +589,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Quim\\source\\repos\\CosmosKernel1\\CosmosKernel1\\CosmosKernel1.csproj",
+      "projectUniqueName": "C:\\Users\\Quim\\Documents\\GitHub\\CosmosQuim\\CosmosKernel1\\CosmosKernel1.csproj",
       "projectName": "CosmosKernel1",
-      "projectPath": "C:\\Users\\Quim\\source\\repos\\CosmosKernel1\\CosmosKernel1\\CosmosKernel1.csproj",
+      "projectPath": "C:\\Users\\Quim\\Documents\\GitHub\\CosmosQuim\\CosmosKernel1\\CosmosKernel1.csproj",
       "packagesPath": "C:\\Users\\Quim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Quim\\source\\repos\\CosmosKernel1\\CosmosKernel1\\obj\\",
+      "outputPath": "C:\\Users\\Quim\\Documents\\GitHub\\CosmosQuim\\CosmosKernel1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Quim\\AppData\\Roaming\\NuGet\\NuGet.Config",
