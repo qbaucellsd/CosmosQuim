@@ -10,3 +10,16 @@ C:\Users\Quim\source\repos\CosmosKernel1\CosmosKernel1\obj\Debug\net6.0\CosmosKe
 C:\Users\Quim\source\repos\CosmosKernel1\CosmosKernel1\obj\Debug\net6.0\refint\CosmosKernel1.dll
 C:\Users\Quim\source\repos\CosmosKernel1\CosmosKernel1\obj\Debug\net6.0\CosmosKernel1.pdb
 C:\Users\Quim\source\repos\CosmosKernel1\CosmosKernel1\obj\Debug\net6.0\ref\CosmosKernel1.dll
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\obj\Debug\net6.0\CosmosKernel1.csproj.AssemblyReference.cache
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\obj\Debug\net6.0\CosmosKernel1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\obj\Debug\net6.0\CosmosKernel1.AssemblyInfoInputs.cache
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\obj\Debug\net6.0\CosmosKernel1.AssemblyInfo.cs
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\obj\Debug\net6.0\CosmosKernel1.csproj.CoreCompileInputs.cache
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\obj\Debug\net6.0\CosmosKernel1.sourcelink.json
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\obj\Debug\net6.0\CosmosKernel1.dll
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\obj\Debug\net6.0\refint\CosmosKernel1.dll
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\obj\Debug\net6.0\CosmosKernel1.pdb
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\bin\Debug\net6.0\CosmosKernel1.deps.json
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\bin\Debug\net6.0\CosmosKernel1.dll
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\bin\Debug\net6.0\CosmosKernel1.pdb
+C:\Users\Quim\Documents\GitHub\CosmosQuim\CosmosKernel1\obj\Debug\net6.0\ref\CosmosKernel1.dll
