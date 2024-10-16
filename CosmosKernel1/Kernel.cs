@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using Sys = Cosmos.System;
-Console.OutputEncoding = Encoding.UTF8;
 
 namespace CosmosKernel1
 {
@@ -12,10 +11,7 @@ namespace CosmosKernel1
         protected override void BeforeRun()
         {
             Console.Clear();
-            Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Cosmos booted successfully. Type a line of text to get it echoed back.");
-            string unicodeChar = "⣤";
-            Console.WriteLine("Aquí tienes el carácter Unicode: " + unicodeChar);
         }
 
         protected override void Run()
