@@ -4,8 +4,8 @@ Benvingut a UWU operative system 😀
 
 ## Requisits 🤓
 
-Visual Studio
-VMWare
-Cosmos
+Visual Studio<br>
+VMWare<br>
+Cosmos<br>
 
-- ![foto](./shinoa%20hiragi.png)
+<img src="./shinoa hiragi.png" alt="Foto" width="400" height="300">
