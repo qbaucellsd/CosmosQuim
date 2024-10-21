@@ -11,15 +11,36 @@ namespace CosmosKernel1
         protected override void BeforeRun()
         {
             Console.Clear();
-            Console.WriteLine("Cosmos booted successfully. Type a line of text to get it echoed back.");
+            Console.WriteLine("           |  | \\     /\\     / |  | Operative\r\n" +
+                              "Welcome to |__|   \\_/    \\_/   |__| System\n");
         }
 
-        protected override void Run()
+        protected override async void Run()
         {
-            Console.Write("Input: ");
+            Console.WriteLine("1. Help\n" +
+                              "2. About\n" +
+                              "3. Restart\n" +
+                              "4. Shutdown\n");
+            Console.Write("Choose an option: ");
             var input = Console.ReadLine();
-            Console.Write("Text typed: ");
-            Console.WriteLine(input);
+            int numero = int.Parse(input);
+            switch (numero)
+            {
+                case 1:
+                    Console.WriteLine("You don't get help in this system :)");
+                    break;
+                case 2:
+                    Console.WriteLine("This system requires VMware, Comos and Visual Code");
+                    break;
+                case 3:
+                    Console.WriteLine("The system will restart.");
+                    Cosmos.System.Power.Reboot();
+                    break;
+                case 4:
+                    Console.WriteLine("The system will shutdown.");
+                    Cosmos.System.Power.Shutdown();
+                    break;
+            }
         }
     }
 }

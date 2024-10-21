@@ -1,10 +1,11 @@
-# CosmosQuim
+# UWU_SO 😳
 
-- # Titulo
-- ## Subtitulo
-- `resalta`
-- *negrita*
-- [enlace](http://enlace.local)
-- ![foto](./foto.png)
+Benvingut a UWU operative system 😀
 
-prueba
+## Requisits 🤓
+
+Visual Studio
+VMWare
+Cosmos
+
+- ![foto](./shinoa%20hiragi.png)
