@@ -8,4 +8,4 @@ Visual Studio<br>
 VMWare<br>
 Cosmos<br>
 
-<img src="./shinoa hiragi.png" alt="Foto" width="400" height="300">
+<img src="./shinoa hiragi.png" alt="Foto" style="width: 50%; height: auto;">
