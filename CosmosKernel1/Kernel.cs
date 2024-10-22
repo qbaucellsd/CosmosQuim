@@ -10,12 +10,13 @@ namespace CosmosKernel1
 
         protected override void BeforeRun()
         {
+            Sys.KeyboardManager.SetKeyLayout(new Sys.ScanMaps.ESStandardLayout());
             Console.Clear();
             Console.WriteLine("           |  | \\     /\\     / |  | Operative\r\n" +
                               "Welcome to |__|   \\_/    \\_/   |__| System\n");
         }
 
-        protected override async void Run()
+        protected override void Run()
         {
             Console.WriteLine("1. Help\n" +
                               "2. About\n" +
@@ -27,19 +28,34 @@ namespace CosmosKernel1
             switch (numero)
             {
                 case 1:
-                    Console.WriteLine("You don't get help in this system :)");
+                    Console.Clear();
+                    Console.WriteLine("You don't get help in this system :)\n");
+                    Console.WriteLine("Press enter to return to menu...");
+                    Console.ReadLine();
+                    Console.Clear();
                     break;
                 case 2:
-                    Console.WriteLine("This system requires VMware, Comos and Visual Code");
+                    Console.Clear();
+                    Console.WriteLine("This system requires VMware, Cosmos and Visual Code\n");
+                    Console.WriteLine("Press enter to return to menu...");
+                    Console.ReadLine();
+                    Console.Clear();
                     break;
                 case 3:
+                    Console.Clear();
                     Console.WriteLine("The system will restart.");
+                    Console.WriteLine("Press enter to confirm...");
+                    Console.ReadLine();
                     Cosmos.System.Power.Reboot();
                     break;
                 case 4:
+                    Console.Clear();
                     Console.WriteLine("The system will shutdown.");
                     Cosmos.System.Power.Shutdown();
+                    Console.WriteLine("Press enter to confirm...");
+                    Console.ReadLine();
                     break;
+            
             }
         }
     }
