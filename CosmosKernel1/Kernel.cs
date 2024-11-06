@@ -27,44 +27,53 @@ namespace CosmosKernel1
 
         protected override void Run()
         {
-            Console.WriteLine("1. Help\n" +
-                              "2. About\n" +
-                              "3. Restart\n" +
-                              "4. Shutdown\n");
-            Console.Write("Choose an option: ");
+            Console.Write("cmd: ");
             var input = Console.ReadLine();
-            int numero = int.Parse(input);
-            switch (numero)
-            {
-                case 1:
-                    Console.Clear();
-                    Console.WriteLine("You don't get help in this system :)\n");
-                    Console.WriteLine("Press enter to return to menu...");
-                    Console.ReadLine();
-                    Console.Clear();
-                    break;
-                case 2:
-                    Console.Clear();
-                    Console.WriteLine("This system requires VMware, Cosmos and Visual Code\n");
-                    Console.WriteLine("Press enter to return to menu...");
-                    Console.ReadLine();
-                    Console.Clear();
-                    break;
-                case 3:
-                    Console.Clear();
-                    Console.WriteLine("The system will restart.");
-                    Console.WriteLine("Press enter to confirm...");
-                    Console.ReadLine();
-                    Sys.Power.Reboot();
-                    break;
-                case 4:
-                    Console.Clear();
-                    Console.WriteLine("The system will shutdown.");
-                    Sys.Power.Shutdown();
-                    Console.WriteLine("Press enter to confirm...");
-                    Console.ReadLine();
-                    break;
-            
+            if (!string.IsNullOrEmpty(input)){
+                switch (input)
+                {
+                    case "/help":
+                        Console.Clear();
+                        Console.WriteLine("All available commands are:\n" +
+                                          "/help     : See all commands\n" +
+                                          "/about    : See all OS requirements\n" +
+                                          "/restart  : Restarts the system\n" +
+                                          "/shutdown : Shutdowns the system\n" +
+                                          "/clear    : Clears the screen\n");
+                        Console.WriteLine("Press enter to return to menu...");
+                        Console.ReadLine();
+                        Console.Clear();
+                        break;
+                    case "/about":
+                        Console.Clear();
+                        Console.WriteLine("This system requires VMware, Cosmos and Visual Code\n");
+                        Console.WriteLine("Press enter to return to menu...");
+                        Console.ReadLine();
+                        Console.Clear();
+                        break;
+                    case "/restart":
+                        Console.Clear();
+                        Console.WriteLine("The system will restart.");
+                        Console.WriteLine("Press enter to confirm...");
+                        Console.ReadLine();
+                        Sys.Power.Reboot();
+                        break;
+                    case "/shutdown":
+                        Console.Clear();
+                        Console.WriteLine("The system will shutdown.");
+                        Console.WriteLine("Press enter to confirm...");
+                        Console.ReadLine();
+                        Sys.Power.Shutdown();
+                        break;
+                    case "/clear":
+                        Console.Clear();
+                        break;
+                    default:
+                        Console.WriteLine("Please enter a valid command. Write /help if you need help.");
+                        Console.WriteLine(input);
+                        Console.ReadLine();
+                        break;
+                }
             }
         }
     }
