@@ -35,8 +35,8 @@ namespace CosmosKernel1
                 switch (input){
                     case "/help":
                         Console.WriteLine("\nAll available commands are:\n\n" +
-                                          "/help     : See all commands\n" +
-                                          "/about    : See all OS requirements\n" +
+                                          "/help     : Get all commands\n" +
+                                          "/about    : Get all OS requirements\n" +
                                           "/restart  : Restarts the system\n" +
                                           "/shutdown : Shutdowns the system\n" +
                                           "/clear    : Clears the screen\n" +
@@ -46,7 +46,9 @@ namespace CosmosKernel1
                                           "/listall  : Get directory listing (files and other directories)\n" +
                                           "/newfile  : Create new file\n" +
                                           "/newdir   : Create a new directory\n" +
-                                          "/del      : Deleting a file or a directory\n");
+                                          "/del      : Deleting a file or a directory\n" +
+                                          "/write    : Write to file\n" +
+                                          "/read     : Read all text from a specific file\n");
                         break;
                     case "/about":
                         Console.WriteLine("\nThis system requires VMware, Cosmos and Visual Code");
@@ -105,6 +107,7 @@ namespace CosmosKernel1
                         catch (Exception e){
                             Console.WriteLine(e.ToString());
                         }
+                        Console.WriteLine("");
                         break;
                     case "/newdir":
                         try{
@@ -117,16 +120,17 @@ namespace CosmosKernel1
                         catch (Exception e){
                             Console.WriteLine(e.ToString());
                         }
+                        Console.WriteLine("");
                         break;
                     case "/del":
                         try{
                             Console.Write("\nIs it a file(f) or directory(d): ");
                             var input3 = Console.ReadLine();
                             if (!string.IsNullOrEmpty(input3)){
-                                Console.Write("\n\nFile name to delete: ");
+                                Console.Write("\nFile name to delete: ");
                                 var input4 = Console.ReadLine();
                                 if (!string.IsNullOrEmpty(input4)){
-                                    switch (input4) {
+                                    switch (input3) {
                                         case "f":
                                             File.Delete(@"0:\" + input4 + ".txt");
                                             break;
@@ -140,6 +144,38 @@ namespace CosmosKernel1
                         catch (Exception e){
                             Console.WriteLine(e.ToString());
                         }
+                        Console.WriteLine("");
+                        break;
+                    case "/write":
+                        try{
+                            Console.Write("\nFile name to write: ");
+                            var input3 = Console.ReadLine();
+                            if (!string.IsNullOrEmpty(input3)){
+                                Console.Write("\nText: ");
+                                var input4 = Console.ReadLine();
+                                if (!string.IsNullOrEmpty(input4)){
+                                    File.WriteAllText(@"0:\" + input3 + ".txt", input4);
+                                }
+                            }
+                        }
+                        catch (Exception e){
+                            Console.WriteLine(e.ToString());
+                        }
+                        Console.WriteLine("");
+                        break;
+                    case "/read":
+                        try{
+                            Console.Write("\nFile name to read: ");
+                            var input3 = Console.ReadLine();
+                            if (!string.IsNullOrEmpty(input3)){
+                                Console.WriteLine("");
+                                Console.WriteLine(File.ReadAllText(@"0:\" + input3 + ".txt"));
+                            }
+                        }
+                        catch (Exception e){
+                            Console.WriteLine(e.ToString());
+                        }
+                        Console.WriteLine("");
                         break;
                     default:
                         Console.WriteLine("\nPlease enter a valid command. Write /help if you need help.\n");
