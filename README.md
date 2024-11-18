@@ -1,3 +1,5 @@
+**Welcome to UWU operative system 😀**
+
 ## Latest update! MATHS 🧮
 
 The latest update introduces a basic command-line calculator that allows users to 
@@ -10,14 +12,12 @@ The calculator supports basic operations such as:
  - Division (/)
 
 Example:
+
 `cmd: 2+2`
+
 `cmd: 4`
 
-# UWU_SO 😳
-
- Welcome to UWU operative system 😀
-
-## About 🤓
+## About UWU_SO 🤓
 
 UWU_SO is a custom operating system built on the Cosmos framework, designed to run directly on hardware or in a virtual machine. 
 This project includes basic OS functionalities such as file management, system operations, and a new command-line calculator feature.
