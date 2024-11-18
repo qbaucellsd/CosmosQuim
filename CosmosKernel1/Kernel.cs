@@ -6,6 +6,8 @@ using Cosmos.System.Graphics;
 using System.Drawing;
 using System.IO;
 using Cosmos.Debug.Kernel.Plugs.Asm;
+using System.Data;
+using System.Linq.Expressions;
 
 
 namespace CosmosKernel1
@@ -15,20 +17,21 @@ namespace CosmosKernel1
         //Canvas canvas;
         Sys.FileSystem.CosmosVFS fs = new Cosmos.System.FileSystem.CosmosVFS();
 
-        protected override void BeforeRun()
-        {
+        protected override void BeforeRun(){
 
             Sys.KeyboardManager.SetKeyLayout(new Sys.ScanMaps.ESStandardLayout());
             Sys.FileSystem.VFS.VFSManager.RegisterVFS(fs);
             Console.Clear();
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("           |  | \\     /\\     / |  | Operative\r\n" +
                               "Welcome to |__|   \\_/    \\_/   |__| System\n");
          //   canvas = FullScreenCanvas.GetFullScreenCanvas(new Mode(640, 480, ColorDepth.ColorDepth32));
          //   canvas.Clear(Color.Blue);
         }
 
-        protected override void Run()
-        {
+        protected override void Run(){
             Console.Write("cmd: ");
             var input = Console.ReadLine();
             if (!string.IsNullOrEmpty(input)){
@@ -178,10 +181,45 @@ namespace CosmosKernel1
                         Console.WriteLine("");
                         break;
                     default:
-                        Console.WriteLine("\nPlease enter a valid command. Write /help if you need help.\n");
+                        try{
+                            var result = EvaluarExpresion(input);
+                            Console.WriteLine("cmd: " + result);
+                        }
+                        catch (Exception e){
+                            Console.WriteLine("\nPlease enter a valid command or operation. Write /help if you need any help.\n");
+                        }
                         break;
                 }
             }
+        }
+
+        private double EvaluarExpresion(string expresion){
+            double resultado = 0;
+            string[] partes = expresion.Split(new char[] { '+', '-', '*', '/' });
+            double operando1 = Convert.ToDouble(partes[0].Trim());
+            double operando2 = Convert.ToDouble(partes[1].Trim());
+            char operador = expresion[partes[0].Length];
+
+            switch (operador){
+                case '+':
+                    resultado = operando1 + operando2;
+                    break;
+                case '-':
+                    resultado = operando1 - operando2;
+                    break;
+                case '*':
+                    resultado = operando1 * operando2;
+                    break;
+                case '/':
+                    if (operando2 != 0)
+                        resultado = operando1 / operando2;
+                    else
+                        throw new Exception("You cannot divide by 0.\n");
+                    break;
+                default:
+                    throw new Exception("Operator not supported.\n");
+            }
+            return resultado;
         }
     }
 }
